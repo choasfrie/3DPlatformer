@@ -4,46 +4,116 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public CharacterController controller;
+    [Header("Movement")]
+    public float moveSpeed;
 
-    public float speed = 12f;
-    public float gravity = -9.81f * 2;
-    public float jumpHeight = 3f;
+    public float GroundDrag;
 
-    public Transform groundCheck;
-    public float groundDistance = 0.4f;
-    public LayerMask groundMask;
+    public float jumpForce;
+    public float jumpCooldown;
+    public float airMultiplier;
+    bool readyToJump;
 
-    Vector3 velocity;
+    [Header("Keybinds")]
+    public KeyCode jumpKey = KeyCode.Space;
 
-    bool isGrounded;
+    [Header("Groundcheck")]
+    public float playerHeight;
+    public LayerMask whatIsGround;
+    bool grounded;
 
+    public Transform Orientation;
+
+    float HorizontalInput;
+    float VerticalInput;
+
+    Vector3 moveDirection;
+
+    Rigidbody rb;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+        rb.freezeRotation = true;
+
+        readyToJump = true;
+    }
+
+    // Update is called once per frame
     void Update()
     {
+        //Check if Grounded
+        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
+        
+        MyInput();
+        SpeedControl();
 
-        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
-
-        if (isGrounded && velocity.y < 0)
+        if (grounded)
         {
-            velocity.y = -2f;
-        }
-
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
-
-
-        Vector3 move = transform.right * x + transform.forward * z;
-
-        controller.Move(move * speed * Time.deltaTime);
-
-
-        if (Input.GetButtonDown("Jump") && isGrounded)
+            rb.drag = GroundDrag;
+        }else
         {
-            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+            rb.drag = 0;
         }
+    }
 
-        velocity.y += gravity * Time.deltaTime;
+    private void FixedUpdate()
+    {
+        MovePlayer();
+    }
 
-        controller.Move(velocity * Time.deltaTime);
+    private void MyInput()
+    {
+        HorizontalInput = Input.GetAxisRaw("Horizontal");
+        VerticalInput = Input.GetAxisRaw("Vertical");
+
+        if (Input.GetKey(jumpKey) && readyToJump && grounded)
+        {
+            readyToJump = false;
+
+            Jump();
+
+            Invoke(nameof(ResetJump), jumpCooldown);
+        }
+    }
+
+    private void MovePlayer()
+    {
+        moveDirection = Orientation.forward * VerticalInput + Orientation.right * HorizontalInput;
+
+        rb.AddForce(moveDirection.normalized * moveSpeed * 10f);
+
+        // on ground
+        if (grounded)
+            rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+
+        // in air
+        else if (!grounded)
+            rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
+
+    }
+
+    private void SpeedControl()
+    {
+        Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+
+        //limits speed so you cant move at the speed of light
+        if (flatVel.magnitude > moveSpeed)
+        {
+            Vector3 limitedVel = flatVel.normalized * moveSpeed;
+            rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
+        }
+    }
+
+    private void Jump()
+    {
+        // reset y velocity
+        rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+
+        rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
+    }
+    private void ResetJump()
+    {
+        readyToJump = true;
     }
 }
