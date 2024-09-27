@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: bdb592246510de243ad397ad92e801c1
+  productGUID: 88aaa6d65a41e7743b1450a5ac16055e
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: 3DPlatformer
+  productName: 3rdPersonTest
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -677,14 +677,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: 3DPlatformer
+  metroPackageName: 3rdPersonTest
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: 3DPlatformer
+  metroApplicationDescription: 3rdPersonTest
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -754,10 +754,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 26ab9197-968b-4bab-b197-7ecbbd584d6b
+  cloudProjectId: 9a977da9-b7dc-4fd0-9ee9-5f5d735f30ff
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 3DPlatformer
+  projectName: 3rdPersonTest
   organizationId: choasfrie
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
