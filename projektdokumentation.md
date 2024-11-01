@@ -13,14 +13,24 @@ Alberto Manser und Samuel Lucena
 
 ### 1.1 Ihr Projekt
 
-✍️ Beschreiben Sie Ihr Projekt in einem griffigen Satz.
+Ein 3D Dritte Person Platformer spiel in Unity.
 
 ### 1.2 User Stories
 
 | US-№ | Verbindlichkeit | Typ  | Beschreibung                       |
 | ---- | --------------- | ---- | ---------------------------------- |
-| 1    |                 |      | Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️ |
-| ...  |                 |      |                                    |
+| 1    | Muss                | Funktional     | Als ein Spieler möchte ich ein Spiel als .exe starten können |
+| 2.1  | Muss                 | Funtkional      | Als ein Spieler möchte ich mich nach vorne und hinten bewegen können|
+| 2.2 | Muss | Funktional | Als Spieler möchte ich mich von Seite zu Seite bewegen können |
+| 3 | Muss | Funktional | Als Spieler möchte ich mit meiner Maus nach oben unter links und rechts schauen können |
+| 4 | Muss | Qualität | Als Spieler möchte ich das die Kamera dem Spieler folgt |
+| 5 | Muss | Funktional | Als Spieler möchte ich springen können |
+| 6 | Muss | Funktional | Als Spieler möchte ich in der Luft springen können |
+| 7 | Muss | Funktional | Als Spieler möchte ich auf verschiedene Platformen springen können |
+| 8 | Muss | FUnktional | Als Spieler möchte ich das mein Spielstand gespeichtert wird |
+| 9 | Muss | Funktional | Als Spieler möchte ich bei einem Fehlsprung sterben |
+| 10 | Muss | FUnktional | Als Spieler möchte ich bei tod wiederbelebt werden.  |
+
 
 ✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc.), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). Die User Story selber hat folgende Form: *Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️*.
 
