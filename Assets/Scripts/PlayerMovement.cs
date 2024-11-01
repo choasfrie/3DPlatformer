@@ -4,6 +4,21 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public static PlayerMovement instance;
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+
     [Header("Movement")]
     public float moveSpeed;
 
@@ -37,16 +52,16 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.freezeRotation = true;
 
+        rb.freezeRotation = true;
         readyToJump = true;
-        amountOfJumps = maxJumps; 
+        amountOfJumps = maxJumps;
     }
+
 
     // Update is called once per frame
     void Update()
     {
-        //Check if Grounded
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
 
         MyInput();
@@ -147,4 +162,5 @@ public class PlayerMovement : MonoBehaviour
             Orientation.forward = new Vector3(Camera.main.transform.forward.x, 0, Camera.main.transform.forward.z).normalized;
         }
     }
+
 }
