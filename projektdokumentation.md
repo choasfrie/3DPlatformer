@@ -69,21 +69,21 @@ Use-Case Diagramm
 | ---- | ----------- | ------------- | ------------------------------------------------------------------------------------------------ | ------------- |
 | 1.1  | 23.08.2024  | Alberto Manser| Grundstruktur des Projekts erstellen                                                             | 45 Minuten    |
 | 1.2  | 23.08.2024  | Samuel Lucena | Erste Basis für Spielfigurbewegung festlegen (Vorwärts und Rückwärts mit W- und S-Taste)        | 45 Minuten    |
-| 1.3  | 23.08.2024  | Alberto Manser| Spielszene und Grundumgebung in der Game-Engine erstellen                                       | 45 Minuten    |
-| 2.1  | 30.08.2024  | Samuel Lucena | Seitwärtsbewegung der Spielfigur mit A- und D-Tasten einrichten                                 | 45 Minuten    |
-| 2.2  | 30.08.2024  | Alberto Manser| Erste Plattformen in die Umgebung einbauen und testen                                           | 45 Minuten    |
-| 2.3  | 30.08.2024  | Samuel Lucena | Sprungfunktion mit Leertaste implementieren                                                     | 45 Minuten    |
+| 1.3  | 23.08.2024  | Samuel Lucena | Spielszene und Grundumgebung in der Game-Engine erstellen                                       | 45 Minuten    |
+| 2.1  | 30.08.2024  | Alberto Manser| Seitwärtsbewegung der Spielfigur mit A- und D-Tasten einrichten                                 | 45 Minuten    |
+| 2.2  | 30.08.2024  | Samuel Lucena | Erste Plattformen in die Umgebung einbauen und testen                                           | 45 Minuten    |
+| 2.3  | 30.08.2024  | Alberto Manser| Sprungfunktion mit Leertaste implementieren                                                     | 45 Minuten    |
 | 3.1  | 06.09.2024  | Alberto Manser| Kamerafolge der Spielfigur einstellen                                                           | 45 Minuten    |
 | 3.2  | 06.09.2024  | Samuel Lucena | Doppelsprung ermöglichen, um Bewegung in der Luft zu testen                                     | 45 Minuten    |
 | 4.1  | 13.09.2024  | Alberto Manser| Basis für Fehlsprung-Mechanik (Tod bei Sturz) festlegen                                         | 45 Minuten    |
-| 4.2  | 13.09.2024  | Samuel Lucena | Wiederbelebungspunkt für Spielfigur nach dem Tod definieren                                     | 45 Minuten    |
-| 5.1  | 20.09.2024  | Alberto Manser| Maussteuerung für Kamerablickrichtung (oben, unten, links, rechts)                              | 45 Minuten    |
+| 4.2  | 13.09.2024  | Alberto Manser| Wiederbelebungspunkt für Spielfigur nach dem Tod definieren                                     | 45 Minuten    |
+| 5.1  | 20.09.2024  | Samuel Lucena | Maussteuerung für Kamerablickrichtung (oben, unten, links, rechts)                              | 45 Minuten    |
 | 5.2  | 20.09.2024  | Samuel Lucena | Erstellung eines Menübildschirms, z. B. Start und Optionen                                      | 45 Minuten    |
-| 6.1  | 27.09.2024  | Alberto Manser| Speichern und Laden des Spielstands implementieren                                              | 45 Minuten    |
-| 6.2  | 27.09.2024  | Samuel Lucena | Testfall für die Kamerasteuerung und Anpassungen durchführen                                    | 45 Minuten    |
+| 6.1  | 27.09.2024  | Samuel Lucena | Speichern und Laden des Spielstands implementieren                                              | 45 Minuten    |
+| 6.2  | 27.09.2024  | Alberto Manser| Testfall für die Kamerasteuerung und Anpassungen durchführen                                    | 45 Minuten    |
 | 7.1  | 04.10.2024  | Alberto Manser| Zusätzliche Plattformen hinzufügen und Tests durchführen                                        | 45 Minuten    |
-| 7.2  | 04.10.2024  | Samuel Lucena | Hindernisse und Sammelobjekte hinzufügen als optionale Spiel-Features                           | 45 Minuten    |
-| 8.1  | 11.10.2024  | Alberto Manser| Testfall für Sprung und Doppelsprung erstellen und durchführen                                  | 45 Minuten    |
+| 7.2  | 04.10.2024  | Alberto Manser| Hindernisse und Sammelobjekte hinzufügen als optionale Spiel-Features                           | 45 Minuten    |
+| 8.1  | 11.10.2024  | Samuel Lucena | Testfall für Sprung und Doppelsprung erstellen und durchführen                                  | 45 Minuten    |
 | 8.2  | 11.10.2024  | Samuel Lucena | Testfall für Bewegung (Vorwärts, Rückwärts, Seitwärts) erstellen und durchführen                | 45 Minuten    |
 | 9.1  | 18.10.2024  | Alberto Manser| Testfall für Fehlsprung und Wiederbelebung durchführen                                          | 45 Minuten    |
 | 9.2  | 18.10.2024  | Samuel Lucena | Testfall für Speichern und Laden des Spielstands erstellen und durchführen                      | 45 Minuten    |
