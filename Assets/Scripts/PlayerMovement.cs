@@ -140,4 +140,11 @@ public class PlayerMovement : MonoBehaviour
 
         rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
     }
+    public void RealignOrientation()
+    {
+        if (Orientation != null && Camera.main != null)
+        {
+            Orientation.forward = new Vector3(Camera.main.transform.forward.x, 0, Camera.main.transform.forward.z).normalized;
+        }
+    }
 }
