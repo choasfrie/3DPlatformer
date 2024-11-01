@@ -88,7 +88,7 @@ Ein 3D Dritte Person Platformer spiel in Unity.
 | 10.1 | 25.10.2024  | Alberto Manser| Performance-Test und Optimierung der Spielfigurbewegungen und Sprünge                           | 45 Minuten    |
 | 10.2 | 25.10.2024  | Samuel Lucena | UI-Verbesserungen und Feinschliff an Menü und Interface                                         | 45 Minuten    |
 | 11.1 | 01.11.2024  | Alberto Manser| Erstellung der `.exe`-Datei und Finalisierung für die Veröffentlichung                          | 45 Minuten    |
-| 11.2 | 01.11.2024  | Samuel Lucena | Letzte Tests und Qualitätskontrolle                                                             | 45 Minuten    |
+| 11.2 | 01.11.2024  | Alberto Manser | Letzte Tests und Qualitätskontrolle                                                             | 45 Minuten    |
 
 
 Total: 
@@ -96,7 +96,9 @@ Total:
 
 ## 3 Entscheiden
 
-✍️ Dokumentieren Sie hier Ihre Entscheidungen und Annahmen, die Sie im Bezug auf Ihre User Stories und die Implementierung getroffen haben.
+Wegen Komplikationen und der unterschätzung der gebrauchten Zeit für die Texturen haben wir User-Story 8 nicht implementiert.
+Wegen einem unvorgesehenem crash der Entwicklungsumgebung wurden all unsere Hitboxen gelöscht, wegen Zeitdruck konnten wir danach nur die Hitbox für einige der Autos und Container wieder hinzufügen.
+
 
 ## 4 Realisieren
 
@@ -116,9 +118,9 @@ Total:
 | 6.2  | 27.09.2024 | Alberto Manser  | 0,75 Stunden  | 0,75 Stunden      |
 | 7.1  | 04.10.2024 | Samuel Lucena   | 0,75 Stunden  | nicht abgeschlossen |
 | 7.2  | 04.10.2024 | Alberto Manser  | 0,75 Stunden  | nicht abgeschlossen |
-| 8.1  | 11.10.2024 | Samuel Lucena   | 0,75 Stunden  | nicht abgeschlossen |
-| 8.2  | 11.10.2024 | Alberto Manser  | 0,75 Stunden  | nicht abgeschlossen |
-| 9.1  | 18.10.2024 | Samuel Lucena   | 0,75 Stunden  | nicht abgeschlossen |
+| 8.1  | 11.10.2024 | Samuel Lucena   | 0,75 Stunden  | 1 Stunde |
+| 8.2  | 11.10.2024 | Alberto Manser  | 0,75 Stunden  | 0,75 Stunden |
+| 9.1  | 18.10.2024 | Samuel Lucena   | 0,75 Stunden  | 1,5 Stunden |
 | 9.2  | 18.10.2024 | Alberto Manser  | 0,75 Stunden  | nicht abgeschlossen |
 | 10.1 | 25.10.2024 | Samuel Lucena   | 0,75 Stunden  | 0,75 Stunden      |
 | 10.2 | 25.10.2024 | Alberto Manser  | 0,75 Stunden  | 0,75 Stunden      |
@@ -131,14 +133,23 @@ Total:
 
 | TC-№ | Datum | Resultat | Tester |
 | ---- | ----- | -------- | ------ |
-| 1.1  |       |          |        |
-| ...  |       |          |        |
+| 1.1  | 1.11.2024| ok         | Alberto Manser        |
+| 2.1  | 1.11.2024| ok         | Alberto Manser        |
+| 2.2  | 1.11.2024| ok | Alberto Manser |
+| 2.3 | 1.11.2024| ok | Alberto Manser |
+| 2.4 | 1.11.2024| ok | Alberto Manser|
+| 3.1 | 1.11.2024| ok | Alberto Manser|
+| 3.2 | 1.11.2024| ok | Alberto Manser|
+| 3.3 | 1.11.2024| ok | Alberto Manser|
+| 3.4 | 1.11.2024| ok | Alberto Manser|
+| 4.1 | 1.11.2024| ok | Alberto Manser|
+| 5.1 | 1.11.2024| ok | Alberto Manser|
+| 6.1 | 1.11.2024| ok | Alberto Manser|
+| 7.1 | 1.11.2024| ok | Alberto Manser|
+| 8.1 | 1.11.2024| nicht realisiert| Alberto Manser
+| 9.1 | 1.11.2024| ok aber keine Leben | Alberto Manser|
+| 10.1 | 1.11.2024 | ok |Alberto Manser|
 
-✍️ Vergessen Sie nicht, ein Fazit hinzuzufügen, welches das Test-Ergebnis einordnet.
+Fazit:
+Die Funktionen die wir implementieren laufen ohne grosse Probleme, wie sie in den Issues im Github sehen werden die Kontrols nach dem Wiederbeleben ein bisschen komisch was wir leider nicht fixen konnten.
 
-
-✍️ Verwenden Sie römische Ziffern für Ihre Bug Reports, also I, II, III, IV etc.
-
-## 6 Auswerten
-
-✍️ Fügen Sie hier eine Verknüpfung zu Ihrem Lern-Bericht ein.
